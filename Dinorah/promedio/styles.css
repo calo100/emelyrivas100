@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+/* Efecto hover */
+.contenedor:hover {
+  transform: scale(1.05);
+  background-color: #fef2e7;
+}
+
+/* Título y subtítulos */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+/* Estilos para inputs */
+input[type="number"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #d3d3d3;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+  border-color: #ff6f61;
+  background-color: #ffecd2;
+  outline: none;
+}
+
+/* Botón de acción */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Resultado */
+#salida {
+  font-size: 32px;
+  color: #ff6f61;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+/* Animación para el contenedor al aparecer */
+@keyframes aparecer {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.contenedor {
+  animation: aparecer 0.5s ease-out;
+}

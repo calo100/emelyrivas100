@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="contenedor1">
+        <div class="titulo">
+            <h1>Calculadora Emely Rivas</h1>
+        </div>
+        <div class="inputs">
+            <input type="text" id="num1" placeholder="Número 1">
+            <input type="text" id="num2" placeholder="Número 2">
+        </div>
+        <div class="resultado-box">
+            <input class="resultado" type="text" id="resultado" >
+        </div>
+        <div class="botones">    
+            <button class="boton" onclick="suma()">+</button>
+            <button class="boton" onclick="resta()">-</button>
+            <button class="boton" onclick="multiplicacion()">*</button>
+            <button class="boton" onclick="division()">/</button>
+            <button class="boton" onclick="raizCuadrada()">√</button> 
+            <button class="boton" onclick="potenciacion()">^</button>
+            <button class="boton" onclick="borrar()">DEL</button>
+        </div>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
